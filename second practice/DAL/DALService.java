@@ -11,9 +11,9 @@ public class DALService {
     /** 建立 MySQL 连接（推荐写成方法，方便以后做自动重连） */
     static {
         HikariConfig config = new HikariConfig();
-        config.setJdbcUrl("jdbc:mysql://42.193.223.68:3306/starbucks?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true");
-        config.setUsername("joe");
-        config.setPassword("741432541");
+        config.setJdbcUrl("");
+        config.setUsername("");
+        config.setPassword("");
 
         // 关键配置！！！
         config.addDataSourceProperty("cachePrepStmts", "true");
